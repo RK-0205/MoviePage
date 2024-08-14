@@ -18,7 +18,7 @@ img {
     border-radius: 15px;
 }
 .container {
-    margin: 0 auto;    
+    margin: 80px auto 20px;    
     width: 1200px;
     max-width: 100%;
 }
@@ -27,4 +27,7 @@ img {
     display:grid;
     grid-template-columns: 400px 600px 200px;
     column-gap: 40px;
+}
+.wrapper-col-2{
+    margin-top: 5px;
 }
