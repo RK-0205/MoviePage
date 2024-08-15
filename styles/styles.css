@@ -22,6 +22,17 @@ a {
     color:white;
     text-decoration: none;
 }
+
+a:hover {
+    color:chocolate;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
 .container {
     margin: 80px auto 20px;    
     width: 1200px;
@@ -65,12 +76,13 @@ a {
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
+    color:white !important;
     line-height: 21px;
     transition: all 200ms ease-in-out;
 }
 
 .btn:hover{
-    background-color: chocolate;
+    background-color: chocolate;    
 }
 
 .mb-40 {
@@ -83,5 +95,44 @@ a {
 
 .params li {
     margin-bottom:15px;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    column-gap: 30px;
+    width: 100%;
+    font-size: 14px;
 
+}
+
+.params li .label {    
+    opacity: 0.4;
+}
+
+.tag {
+    display:inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin-top: -3px;
+}
+
+.rating-main{
+    display: block;
+    margin-bottom:10px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color:rgb(3, 248, 73)
+}
+
+.rating-counts{
+    display: block;
+    margin-bottom:10px;
+    line-height: 19px;
+    opacity: 0.4;
+}
+
+.rating-details{
+    display:inline-block;
 }
