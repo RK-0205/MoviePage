@@ -17,6 +17,11 @@ img {
     width:100%;
     border-radius: 15px;
 }
+
+a {
+    color:white;
+    text-decoration: none;
+}
 .container {
     margin: 80px auto 20px;    
     width: 1200px;
@@ -29,5 +34,54 @@ img {
     column-gap: 40px;
 }
 .wrapper-col-2{
-    margin-top: 5px;
+    margin-top: 5px;    
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.4;
+    margin-bottom: 10px; 
+    line-height: 19px;   
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.btn {
+    background-color: brown;
+    padding: 10px 30px;
+    border-radius: 100px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    transition: all 200ms ease-in-out;
+}
+
+.btn:hover{
+    background-color: chocolate;
+}
+
+.mb-40 {
+    margin-bottom:40px;
+}
+
+.params{
+    list-style-type: none;
+}
+
+.params li {
+    margin-bottom:15px;
+
 }
