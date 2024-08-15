@@ -34,14 +34,16 @@ h2{
 }
 
 .container {
-    margin: 80px auto 20px;    
-    width: 1200px;
+    margin: 80px auto;    
+    width: 1210px;
     max-width: 100%;
+    padding:15px;
+    
 }
 
 .wrapper {
     display:grid;
-    grid-template-columns: 400px 600px 200px;
+    grid-template-columns: 350px 600px 150px;
     column-gap: 40px;
 }
 .wrapper-col-2{
@@ -125,6 +127,11 @@ h2{
     line-height: 42px;
     color:rgb(3, 248, 73)
 }
+.rating-main .tag{
+    vertical-align: text-top;
+    line-height: 21px;
+    border:1px solid rgb(3, 248, 73)
+}
 
 .rating-counts{
     display: block;
@@ -135,4 +142,38 @@ h2{
 
 .rating-details{
     display:inline-block;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        grid-template-columns: 250px 1fr 150px;
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .wrapper {
+        grid-template-columns: 400px 150px;  
+        max-width: 520px;
+        margin: 0 auto;     
+    }
+    
+    .wrapper-col-3 {
+        grid-row: 1 / 3;
+        grid-column: 2;
+    }
+
+}
+
+@media (max-width:425px) {
+    .wrapper {
+        grid-template-columns: 1fr;  
+        max-width: 100%;   
+    }
+    
+    .wrapper-col-3 {
+        grid-row: unset;
+        grid-column: 1;
+    }
+
 }
